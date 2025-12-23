@@ -2,7 +2,7 @@
 
 ### Query 1: JOIN
 
-```
+```sql
 select booking_id,u.name as customer_name, v.name as vehicle_name, start_date,end_date,b.status from bookings as b
   inner join users as u on b.user_id=u.user_id
   inner join vehicles as v on b.vehicle_id=v.vehicle_id;
